@@ -183,7 +183,7 @@ contract TokenLocker {
     }
 
     /**
-     * @notice Transfers tokens held by timelock to beneficiary.
+     * @notice Transfers tokens held by tokenlocker to message-sender.
      */
     function release() public {
         uint256 amount = _token.balanceOf(address(this));
